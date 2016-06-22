@@ -1,0 +1,188 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	transition-property: all;
+	transition-duration: 0.7s; /* eu estou alterando esse cara para o link (a) */
+}
+@font-face {
+    font-family: 'robotolight';
+    src: local("robotolight"), local("RobotoLight"), local("Roboto-Light"), url('../../ff/RobotoLight/roboto-light-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+	src: local("robotobold"), local("RobotoBold"), local("Roboto-Bold"), url('../../ff/RobotoBold/roboto-bold-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@viewport {
+	zoom: 1;
+}
+#cabecalho {
+	background-color: #50b0d4;
+	margin: 0;
+	box-shadow: 0 0 1em #002838;
+	color: #fdfdfd;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+}
+#cabecalho_logo_escrito {
+	cursor: pointer;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+#cabecalho_logo_escrito > img {
+	box-shadow: 0 0 0.3em #208AB4;
+	width: 2.3em;
+	height: auto;
+	border: 0;
+	border-radius: 100%;
+}
+#cabecalho_logo_escrito:focus > img, #cabecalho_logo_escrito:active > img {
+	transition-duration: 0.1s;
+	box-shadow: 0 0 0.5em #fdfdfd;
+}
+#cabecalho_logo_escrito > figcaption {
+	font-size: 1.65em;
+	margin-left: 0.3em;
+	font-family: Verdana, robotobold;
+}
+#rodape {
+	background-color: #50b0d4;
+	margin: 0;
+	box-shadow: 0 0 1em #4295b7;
+	color: #fdfdfd;
+	z-index: 5;
+	width: 100%;
+	display: block;
+}
+#rodape a {
+	color: #fdfdfd;
+}
+#tela {
+	z-index: 1;
+	color: #fdfdfd;
+	background: #fdfdfd;
+	/* box-shadow: 0 0 0.2em #fdfdfd; */
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+#telaNoScript {
+	background-color: #fdfdfd;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 1em;
+	color: #37373f;
+}
+.btn {
+	background-color: #55ACEE;
+	background-image: url("../../im/fundoImagem/fundoBtn.jpg");
+	border: none;
+	font-weight: bold;
+	color: #fdfdfd;
+	padding: 0.4em 0.8em;
+	outline: none !important;
+}
+.btn:active {
+	/* border: 0.01em inset #3b88c3; */
+	background: #009b28;
+}
+.btn:focus {
+	box-shadow: 0 0 0.3em #3b88c3;
+}
+.btn:hover {
+	cursor: pointer;
+}
+.btnVermelho {
+	background-color: #ee5555;
+	background-image: url("../../im/fundoImagem/fundoBtnVermelho.jpg");
+	color: #fdfdfd;
+}
+.btnVermelho:active {
+	/* border: 0.01em inset #c33b3b; */
+	background: #c13636;
+}
+.btnVermelho:focus {
+	box-shadow: 0 0 0.3em #c33b3b;
+}
+
+.btnVerdeEscuro {
+	background-color: #51cf60;
+	background-image: url("../../im/fundoImagem/fundoBtnVerdeEscuro.jpg");
+	color: #fdfdfd;
+}
+.btnVerdeEscuro:active {
+	background: #63af5b;
+}
+
+.btnCinza {
+	background-color: #51cf60;
+	background-image: url("../../im/fundoImagem/fundoBtnCinza.jpg");
+	color: #fdfdfd;
+}
+.btnCinza:active {
+	background: #63af5b;
+}
+
+.listaComum {
+	list-style: none;
+}
+.listaComum > li {
+	margin-top: 1em;
+}
+.zoomControle {
+	background-color: #fdfdfd;
+	border: 0.1em solid #4a4a56;
+	padding: 0.5em;
+}
+.zoomControle:hover {
+	cursor: pointer;
+}
+h1, h2 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:active, a:focus {
+	transition-duration: 0.1s;
+	box-shadow: 0 0 0.3em #fdfdfd;
+	outline: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #37373f;
+}
+html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.2em;
+}

@@ -1,0 +1,7 @@
+#sobre_listaEquipe {
+	padding-left: 1em;
+	margin-left: 1em;
+}
+#sobre_listaEquipe > li {
+	margin: 0.4em 0;
+}

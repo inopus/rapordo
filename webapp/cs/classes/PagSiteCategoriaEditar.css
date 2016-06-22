@@ -1,0 +1,26 @@
+/* #sitesCategoriaEditar_voltar {
+	cursor: pointer;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+	width: 5em;
+	margin: 0;
+}
+#sitesCategoriaEditar_voltar > img {
+	width: 2em;
+	height: auto;
+	border: 0;
+	vertical-align: middle;
+}
+#sitesCategoriaEditar_voltar > figcaption {
+	margin-left: 0.4em;
+}
+#sitesCategoriaEditar_voltar:hover > figcaption {
+	text-decoration: underline;
+}
+#sitesCategoriaEditar_form {
+	margin-top: 1em;
+} */

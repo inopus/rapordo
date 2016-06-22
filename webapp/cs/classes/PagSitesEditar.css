@@ -1,0 +1,18 @@
+#pagSitesEditar_pesquisaLista {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 1.4em;
+}
+#pagSitesEditar_pesquisaLista > li {
+	cursor: pointer;
+	padding: 0.7em;
+	border: 0.1em solid #5bc4b6;
+	border-bottom: none;
+}
+#pagSitesEditar_pesquisaLista > li:last-child {
+	border-bottom: 0.1em solid #5bc4b6;
+}
+#pagSitesEditar_pesquisaLista > li:hover, #pagSitesEditar_pesquisaLista > li:focus {
+	text-decoration: underline;
+}

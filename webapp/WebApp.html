@@ -1,0 +1,141 @@
+<!doctype html>
+<html manifest="cache.manifest" lang="pt-br">
+	<head>
+		<script>
+			if(typeof window.addEventListener != typeof Function) {
+				location.href = "indisponivel.html";
+			}
+		</script>
+		
+		<title>Rapordo WebApp</title>
+		<meta charset="utf-8">
+		<meta name="author" title="Otávio R. Rossi">
+		<link rel="author" href="http://otavio.rrossi.eti.br" title="Otávio R. Rossi">
+		<meta name="description" content="Rapordo - Seu site de favoritos na nuvem. Mantenha seus sites favoritos guardados em um único local! Acesse o Rapordo WebApp de onde e quando quiser! Você pode utilizar o Rapordo WebApp para armazenar novos links ou consultar os links que já possuí mesmo sem conexão com a Internet!">
+		<meta name="keywords" content="Rapordo, WebApp, Sites, Favoritos, Nuvem, Offline, Rápido, Navegar, Internet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="apple-touch-icon" href="im/logo/logo128.png">
+		<link rel="icon" href="im/logo/logo128.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<link href="cs/classes/Pagina.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/Pagina_grande.css" rel="stylesheet" type="text/css" media="all and (min-width: 960px)">
+		<link href="cs/classes/Carregando.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/Alerta.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagSite.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagSite_grande.css" rel="stylesheet" type="text/css" media="all and (min-width: 960px)">
+		<link href="cs/classes/PagSite_pequeno.css" rel="stylesheet" type="text/css" media="all and (max-width: 590px)">
+		<link href="cs/classes/PagSiteAdicionar.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagSiteCategoria.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagSiteCategoriaEditar.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagMenuPrincipal.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagSobre.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagAjuda.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagPreInicio.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagPreInicio_pequeno.css" rel="stylesheet" type="text/css" media="all and (max-width: 800px)">
+		<link href="cs/classes/PagSitesEditar.css" rel="stylesheet" type="text/css" media="all">
+		<link href="cs/classes/PagSitesMoverMove.css" rel="stylesheet" type="text/css" media="all">
+		
+		<link href="cs/gerais/webapp.css" rel="stylesheet" type="text/css" media="all">
+		
+		<script src="js/funcoes/consoleToAlert.js"></script>
+		<script src="js/funcoes/funcionalidadesDisponiveis.js"></script>
+		<script src="js/funcoes/hrefToClick.js"></script>
+		
+		<script src="js/classes/sha512.js"></script>
+		<script src="js/funcoes/regex.js"></script>
+		<script src="js/funcoes/webapp.js"></script>
+		
+		<script src="js/classes/Token.js"></script>
+		<script src="js/classes/Usuario.js"></script>
+		<script src="js/classes/Alerta.js"></script>
+		<script src="js/classes/Pagina.js"></script>
+		<script src="js/classes/Carregando.js"></script>
+		<script src="js/classes/HttpReq.js"></script>
+		<script src="js/classes/FundoImagem.js"></script>
+		<script src="js/classes/PagSites.js"></script>
+		<script src="js/classes/Site.js"></script>
+		<script src="js/classes/PagSair.js"></script>
+		<script src="js/classes/PagSitesAdicionar.js"></script>
+		<script src="js/classes/Categoria.js"></script>
+		<script src="js/classes/PagSitesCategoria.js"></script>
+		<script src="js/classes/PagSitesCategoriaEditar.js"></script>
+		<script src="js/classes/PagInicio.js"></script>
+		<script src="js/classes/PagMenuPrincipal.js"></script>
+		<script src="js/classes/PagRecuperarDados.js"></script>
+		<script src="js/classes/PagTermos.js"></script>
+		<script src="js/classes/PagPrivacidade.js"></script>
+		<script src="js/classes/PagSobre.js"></script>
+		<script src="js/classes/PagAjuda.js"></script>
+		<script src="js/classes/PagLanguage.js"></script>
+		<script src="js/classes/PagDownload.js"></script>
+		<script src="js/classes/PagCadeadoHttps.js"></script>
+		<script src="js/classes/PagConfiguracao.js"></script>
+		<script src="js/classes/PagSitesEditar.js"></script>
+		<script src="js/classes/PagSitesEditarEdicao.js"></script>
+		<script src="js/classes/PagPreInicio.js"></script>
+		<script src="js/classes/PagSitesMover.js"></script>
+		<script src="js/classes/PagSitesMoverMove.js"></script>
+		
+		<script src="js/bd/Banco.js"></script>
+		<script src="js/bd/Banco/Banco_Site.js"></script>
+		<script src="js/bd/Banco/Banco_SitePendencia.js"></script>
+		<script src="js/bd/Banco/Banco_Categoria.js"></script>
+		
+		<script src="js/funcoes/hrefToClick.js"></script>
+		<script src="js/funcoes/windowLoad.js"></script>
+	</head>
+	<body>
+		<noscript>
+			<div id="telaNoScript">
+				<p>
+					Não é possível utilizar o Rapordo WebApp com o JavaScript desabilitado.
+				</p>
+				<p>
+					Caso seu navegador não tenha suporte a JavaScript, utilize o 
+					<a href="http://firefox.com" target="_blank">Firefox</a> atualizado.
+				</p>
+			</div>
+		</noscript>
+		<div id="cabecalho">
+			<div class="limitaLargura" style="padding-top: 0.3em; padding-bottom: 0.3em; display: -webkit-flex; display: -moz-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; -webkit-align-items: center; -moz-align-items: center; align-items: center;">
+				<figure id="cabecalho_logo_escrito">
+					<img src="im/logo/logo128.png" alt="Logo Rapordo">
+					<figcaption>Rapordo</figcaption>
+				</figure>
+				<a href="#menu_principal" class="hrefToClick" title="Menu">
+					<img src="im/menuBtn64.png" style="border-radius: 0.3em; width: 2.7em; height: auto; border: 0; vertical-align: middle;" alt="Menu">
+				</a>
+			</div>
+		</div>
+		<div id="tela">
+			<main id="pagina" class="pagina">
+				<div id="preInicio_conteudo_home"><section class="pequenoDirectionColumnReverse" id="imagem_principal"><div style="background-color: transparent;"><form style="width: 80%; max-width: 438px; margin-left: auto; margin-right: auto;" novalidate="true" spellcheck="false" class="formulario" id="formUsuarioEntrar"><div class="espacoForm"><input title="Usuário ou Email" id="formEntrarTxtUsuarioEmail" class="inputTxt" placeholder="Usuário ou Email" name="txtUsuarioEmail" type="text"></div><div class="espacoForm"><input title="Senha válida" id="formEntrarTxtSenha" class="inputTxt" placeholder="Senha" name="txtSenha" type="password"></div><div class="espacoForm"><div class="espacoForm"><input value="Entrar" id="btnUsuarioEntrar" style="width: 100%; padding: 0.6em;" class="btn btnVerdeEscuro" type="button"></div><div class="espacoForm"><input value="Esqueceu sua senha?" id="btnEsqueceuSenha" style="width: 100%; font-size: 0.8em;" class="btn btnCinza" type="button"></div></div></form></div><div><img alt="Rapordo" src="im/preInicio/imgRapordo.png" id="logo_rapordo"><p style="width: 93%; margin-left: auto; margin-right: auto;">Seu WebApp de favoritos na nuvem</p></div></section><section id="apresentacao_principal"><p>"Para que complicar <br> se podemos <span style="font-weight: bold;">simplificar</span>"</p></section><section class="transicao_conteudo"><img src="im/preInicio/imgEstrelaSeparacao.png"></section><section id="fluxo_introdutorio"><figure class="fluxo_introdutorio_item"><img alt="SALVE" src="im/preInicio/imgSalve.png"><figcaption>SALVE</figcaption></figure><figure class="fluxo_introdutorio_item"><img alt="COMPARTILHE" src="im/preInicio/imgCompartilhe.png"><figcaption>COMPARTILHE</figcaption></figure><figure class="fluxo_introdutorio_item"><img alt="APROVEITE" src="im/preInicio/imgAproveite.png"><figcaption>APROVEITE</figcaption></figure></section><section style="text-align: center;"><button id="btn_cadastro">CADASTRE-SE NO RAPORDO</button></section><section style="background-image: url(im/preInicio/imgExplicativa1.jpg);" class="apresentacao_funcionalidade_esquerda"><p>Mantenha seus sites favoritos guardados em um único local!</p></section><section class="explicacao_funcionalidade"><div class="imagem_funcionalidade"><img alt="Tevesisão" style="width: 12em;" src="im/preInicio/imgMobilidade1.png"><img alt="Tablet" style="width: 6em;" src="im/preInicio/imgMobilidade2.png"><img alt="Celular" style="width: 3em;" src="im/preInicio/imgMobilidade3.png"></div><div class="texto_funcionalidade"><p class="titulo_funcionalidade" style="margin-bottom: 0;">Acesse o <span style="font-weight: bold;">Rapordo WebApp</span> de onde e quando quiser!</p><p style="font-size: 1.5em;">O layout adaptativo oferecido pelo WebApp, garante que você tenha sempre em mãos os seus sites favoritos, seja no celular, no computador ou até mesmo na televisão!</p></div></section><section style="background-image: url(im/preInicio/imgExplicativa2.jpg);" class="apresentacao_funcionalidade_direita"><p>Utilizando o Rapordo, a sua navegação na Internet será muito mais ágil!</p></section><section class="explicacao_funcionalidade explicacaoDirectionReverse"><div style="width: 24.06em; text-align: center;"><img alt="APROVEITE" class="imagem_representativa_funcionalidade" src="im/preInicio/imgAproveiteMaior.png"></div><div class="texto_funcionalidade"><p class="titulo_funcionalidade" style="margin-bottom: 0;">Seu tempo é <span style="font-weight: bold;">precioso</span> e nós sabemos disso!</p><p style="font-size: 1.5em;">O Rapordo WebApp permite que você não tenha que se preocupar em lembrar e digitar seus sites mais importantes. Com um clique você poderá acessar o site que mais precisa!</p></div></section><section style="background-image: url(im/preInicio/imgExplicativa3.jpg);" class="apresentacao_funcionalidade_esquerda"><p>Veja seus links mesmo sem conexão com a Internet!</p></section><section class="explicacao_funcionalidade"><div style="width: 24.06em; text-align: center;"><img alt="Sem conexão" class="imagem_representativa_funcionalidade" src="im/preInicio/imgSemConexao.png"></div><div class="texto_funcionalidade"><p class="titulo_funcionalidade" style="margin-bottom: 0;">O <span style="font-weight: bold;">Rapordo WebApp</span> está sempre com você!</p><p style="font-size: 1.5em;">Você pode utilizar o Rapordo WebApp para armazenar novos links ou consultar os links que já possuí mesmo quando não tiver conectado à Internet!</p></div></section></div>
+			</main>
+			<footer id="rodape">
+				<div class="limitaLargura" style="padding-top: 0.5em; padding-bottom: 0.5em; display: -webkit-flex; display: -moz-flex; display: flex; -webkit-align-items: center; -moz-align-items: center; align-items: center;">
+					<a href="#cadeadoHttps" class="hrefToClick" title="Conexão HTTPS" style="margin-right: 1em;">
+						<img src="im/cadeadoHttps64.png" style="border-radius: 0.3em; width: 1.8em; height: auto; border: 0; vertical-align: middle;" alt="Conexão HTTPS">
+					</a>
+					<p style="margin: 0;">
+						&copy;
+						<time>2015</time>
+						<a href="#sobre" class="hrefToClick" title="Rapordo WebApp">Rapordo WebApp (4.9.1)</a>
+						&#8212;
+						<a title="Termos de Serviço" class="hrefToClick" href="#termos">Termos</a>
+						&#183;
+						<a title="Política de privacidade" class="hrefToClick" href="#privacidade">Privacidade</a>
+						&#183;
+						<a title="Tire as suas dúvidas sobre o Rapordo" class="hrefToClick" href="#ajuda">Ajuda</a>
+						&#183;
+						<a title="Veja todos os plugins e aplicativos disponíveis para o Rapordo" class="hrefToClick" href="#download">Download</a>
+						&#183;
+						<a title="O que é Rapordo e quem está por trás dele?" class="hrefToClick" href="#sobre">Sobre</a>
+						&#183;
+						<a title="Other languages" class="hrefToClick" href="#language">Other languages</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+{
+	"version": "4.9.1",
+	"name": "Rapordo WebApp",
+	"description": "Utilize o Rapordo WebApp para armazenar novos links favoritos, ou consultar os links já existentes, quando e onde quiser mesmo sem conexão com à Internet!",
+	"launch_path": "/WebApp.html",
+	"icons": {
+	  "16": "/im/logo/logo16.png",
+	  "32": "/im/logo/logo32.png",
+	  "60": "/im/logo/logo60.png",
+	  "64": "/im/logo/logo64.png",
+	  "128": "/im/logo/logo128.png",
+	  "256": "/im/logo/logo256.png",
+	  "512": "/im/logo/logo512.png"
+	},
+	"developer": {
+		"name": "Otavio R. Rossi",
+		"url": "http://otavio.rrossi.eti.br"
+	},
+	"default_locale": "pt-br",
+	"type": "web",
+	"appcache_path": "/cache.manifest",
+	"chrome": {
+		"navigation": false
+	},
+	"fullscreen": "false",
+	"installs_allowed_from": [
+	  "https://marketplace.firefox.com",
+	  "http://rapordo.com",
+	  "https://web13.sslblindado.com"
+	],
+	"locales": {
+	  "en": {
+		"name": "Rapordo WebApp",
+		"description": "Use Rapordo WebApp to store new favorite links, or consult existing links, anytime and anywhere even without connection to the Internet!"
+	  }
+	}
+}

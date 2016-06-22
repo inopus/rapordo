@@ -1,0 +1,42 @@
+#sitesAdicionar_pendencias > table {
+	width: 100%;
+	border: 0.1em solid #fdfdfd;
+	border-collapse: collapse;
+}
+#sitesAdicionar_pendencias > table > caption {
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 0.6em;
+	font-size: 1.2em;
+}
+#sitesAdicionar_pendencias > table > tbody > tr > td > a {
+	color: #fdfdfd;
+	display: block;
+}
+#sitesAdicionar_pendencias > table td, #sitesAdicionar_pendencias > table th {
+	border: 0.1em solid #fdfdfd;
+	padding: 0.4em;
+	text-align: center;
+}
+#sitesAdicionar_pendencias > table th {
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	color: #37373f;
+	background: #dadada;
+}
+#sitesAdicionar_pendencias > table td:first-child, #sitesAdicionar_pendencias > table th:first-child {
+	text-align: left;
+	width: 100%;
+}
+#sitesAdicionar_pendencias > table td > img {
+	width: 2em;
+	border: 0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+#sitesAdicionar_pendencias .nenhumSitePendenciaHtml {
+	font-weight: bold;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center !important; /* se não for !important assim ele não fica centralizado porque eu defini nesse doc que ele ia ser left por tag */
+}

@@ -1,0 +1,38 @@
+#alerta {
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+	top: -50%;
+	box-shadow: 0 0 0.2em #4A4A56;
+	text-align: center;
+}
+
+#alerta #alertaMensagem {
+	padding: 1em;
+	margin: 0;
+	font-weight: bold;
+}
+
+#alerta .sucesso {
+	background: #dff0d8;
+	color: #3c763d;
+	border: 0.1em solid #d6e9c6;
+}
+
+#alerta .aviso {
+	background: #d9edf7;
+	color: #31708f;
+	border: 0.1em solid #bce8f1;
+}
+
+#alerta .atencao {
+	background: #fcf8e3;
+	color: #8a6d3b;
+	border: 0.1em solid #faebcc;
+}
+
+#alerta .erro {
+	background: #f2dede;
+	color: #a94442;
+	border: 0.1em solid #ebccd1;
+}

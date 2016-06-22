@@ -1,0 +1,12 @@
+#sites_btnMove {
+	margin-right: 0;
+}
+#sites_opcoes {
+	flex-direction: column;
+}
+#sites_opcoesPesquisa {
+	width: 100%;
+}
+#sites_opcoesSite {
+	width: 100%;
+}

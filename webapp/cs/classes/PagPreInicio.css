@@ -1,0 +1,214 @@
+#preInicio_conteudo_home {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    flex-flow: column;
+	background-image: url(../../im/preInicio/imgFundo.jpg);
+	font-size: 0.95em;
+}
+#preInicio_conteudo_home p{
+	color: #333333;
+	font-family: robotolight;
+}
+#preInicio_conteudo_home section{
+    -webkit-flex: 1 1 auto; /* acho que nao precisa disso */
+    -moz-flex: 1 1 auto; /* acho que nao precisa disso */
+    flex: 1 1 auto; /* acho que nao precisa disso */
+}
+#preInicio_conteudo_home .pequenoDirectionColumnReverse > div {
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	width: 410px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+#preInicio_conteudo_home #imagem_principal{
+	background-image: url(../../im/preInicio/imgPrincipal.jpg);
+	background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	justify-content: space-between;
+}
+
+#preInicio_conteudo_home #imagem_principal #logo_rapordo{
+	width: 100%;
+	max-width: 17em;
+}
+
+#preInicio_conteudo_home #imagem_principal p {
+	font-size: 2.1em;
+	color: #FDFDFD;
+	margin-top: 0.3em;
+	margin-bottom: 0;
+}
+
+#preInicio_conteudo_home #apresentacao_principal{
+	text-align: center;
+}
+
+#preInicio_conteudo_home #apresentacao_principal p{
+	font-size: 2.3em;
+	font-style: italic;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+#preInicio_conteudo_home .transicao_conteudo{
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#preInicio_conteudo_home .transicao_conteudo img{
+	max-width: 90%;
+}
+
+#preInicio_conteudo_home #fluxo_introdutorio{
+	text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+
+#preInicio_conteudo_home #fluxo_introdutorio figure{
+	width: 100%;
+	max-width: 17em;
+}
+
+#preInicio_conteudo_home #fluxo_introdutorio figure img{
+	width: 100%;
+    max-width: 5.8em; 
+	height: 5.8em;
+}
+
+
+#preInicio_conteudo_home #fluxo_introdutorio .fluxo_introdutorio_item figcaption{
+	color: #333333;
+	margin-top: 0.3em;
+	font-family: robotolight;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#preInicio_conteudo_home #fluxo_introdutorio .fluxo_introdutorio_item .separador{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#preInicio_conteudo_home #btn_cadastro{
+	background: url(../../im/preInicio/imgFundoBotao.jpg);
+	border:none;
+	margin-top: 1.8em;
+	margin-bottom: 1.8em;
+	width: 94%;
+	max-width: 15em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #FDFDFD;
+	font-family: robotolight;
+	font-size: 1.7em;
+	cursor: pointer;
+}
+
+#preInicio_conteudo_home .apresentacao_funcionalidade_esquerda{
+	min-height: 25em;
+    background-position: 0% 100%;
+}
+
+#preInicio_conteudo_home .apresentacao_funcionalidade_esquerda p{
+	font-size: 2.5em;
+	color: #FDFDFD;
+	width: 100%;
+	max-width: 9em;
+	margin-top: 2%;
+	margin-left: 4%;
+}
+
+#preInicio_conteudo_home .apresentacao_funcionalidade_direita{
+	margin-top: 3.8em;
+	min-height: 25em;
+    background-position: 100% 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+#preInicio_conteudo_home .apresentacao_funcionalidade_direita p{
+	text-align: right;
+	font-size: 2.5em;
+	color: #FDFDFD;
+	width: 100%;
+	max-width: 10em;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+#preInicio_conteudo_home .explicacao_funcionalidade{
+	margin-top: 3.8em;
+	margin-bottom: 3.8em;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	justify-content: space-around;
+}
+
+#preInicio_conteudo_home .explicacaoDirectionReverse{
+	-webkit-flex-direction: row-reverse;
+	-moz-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+#preInicio_conteudo_home .explicacao_funcionalidade .imagem_representativa_funcionalidade{
+	width: 12em;
+}
+
+#preInicio_conteudo_home .explicacao_funcionalidade .imagem_funcionalidade{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	align-items: flex-end;
+}
+
+#preInicio_conteudo_home .explicacao_funcionalidade .imagem_funcionalidade img{
+	margin-left: 0.3em;
+}
+
+#preInicio_conteudo_home .explicacao_funcionalidade  .texto_funcionalidade{
+	width: 90%;
+    max-width: 36em;
+}
+
+#preInicio_conteudo_home .explicacao_funcionalidade .texto_funcionalidade .titulo_funcionalidade{
+	font-size: 2.5em;
+}

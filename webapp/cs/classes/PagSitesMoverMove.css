@@ -1,0 +1,7 @@
+.sitesListaMover a {
+	border: 0.13em dashed #fdfdfd;
+	font-size: 0.97em;
+}
+.sitesListaMover a > figure {
+	opacity: 0.1;
+}

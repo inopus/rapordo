@@ -1,0 +1,42 @@
+#sitesCategoria_lista > table {
+	width: 100%;
+	border: 0.1em solid #fdfdfd;
+	border-collapse: collapse;
+}
+#sitesCategoria_lista > table > caption {
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 0.6em;
+	font-size: 1.2em;
+}
+#sitesCategoria_lista > table td, #sitesCategoria_lista > table th {
+	border: 0.1em solid #fdfdfd;
+	padding: 0.4em;
+	text-align: center;
+}
+#sitesCategoria_lista > table th {
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	color: #37373f;
+	background: #dadada;
+}
+#sitesCategoria_lista > table td:first-child, #sitesCategoria_lista > table th:first-child {
+	text-align: left;
+	width: 100%;
+}
+#sitesCategoria_lista > table td > img {
+	width: 2em;
+	border: 0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+#sitesCategoria_lista .nenhumaCategoriaHtml {
+	font-weight: bold;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center !important; /* se não for !important assim ele não fica centralizado porque eu defini nesse doc que ele ia ser left por tag */
+}
+#sitesCategoria_lista a {
+	color: #fdfdfd;
+	display: block;
+}

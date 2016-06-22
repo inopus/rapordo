@@ -1,0 +1,19 @@
+#preInicio_conteudo_home .pequenoDirectionColumnReverse {
+	-webkit-flex-direction: column-reverse;
+	-moz-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	-webkit-justify-content: flex-end !important;
+	-moz-justify-content: flex-end !important;
+	justify-content: flex-end !important;
+}
+#preInicio_conteudo_home .pequenoDirectionColumnReverse > div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4) !important;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+}
+#preInicio_conteudo_home .pequenoDirectionColumnReverse > div:first-child {
+	padding-bottom: 1.6em;
+}

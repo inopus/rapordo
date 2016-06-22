@@ -1,0 +1,29 @@
+#menu_principal ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu_principal ul > li {
+	border-top: 0.1em solid #50b0d4;
+	border-left: 0.1em solid #50b0d4;
+	border-right: 0.1em solid #50b0d4;
+	border-bottom: 0 none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #37373f;
+}
+#menu_principal ul > li:last-child {
+	border-bottom: 0.1em solid #50b0d4;
+}
+#menu_principal ul > li > a {
+	border-radius: 0;
+	color: #fdfdfd;
+	display: block;
+	padding: 1em;
+}
+#menu_principal ul > li > a:hover, #menu_principal ul > li > a:active, #menu_principal ul > li > a:focus {
+	background-color: #50b0d4;
+	box-shadow: 0 0 0.2em #50b0d4;
+	color: #fdfdfd;
+}

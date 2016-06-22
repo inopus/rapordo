@@ -1,0 +1,9 @@
+#pagAjuda_listaFAQ {
+	margin-left: 1em;
+	padding-left: 1em;
+	list-style: decimal;
+}
+#pagAjuda_listaFAQ > li {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
